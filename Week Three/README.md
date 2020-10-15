@@ -9,6 +9,22 @@ Review of last week's homework - Going through the bootstrap tutorial and creati
 
 Think for example - when you register for an account on a website or login to a website
 
+```html
+<body>
+      <form>
+          <div class="form-group">
+              <label for="exampleInputEmail">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">Share your email with us</small>
+          </div>
+          <div class="form-group">
+              <label for="exampleInputPassword">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+          </div>
+      </form>
+  </body>
+```
+
 # Buttons
 
 We can also add a button to our form - Buttons can handle an event when we click on them but for now we will just have a button that doesn't do anything when pressed.
