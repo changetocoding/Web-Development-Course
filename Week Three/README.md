@@ -67,7 +67,7 @@ We can also add a button to our form - Buttons can handle an event when we click
 # Dropdown selection
 
 # Single Selection 
-
+```html
 <div class="form-group">
           <label for="exampleFormControlSelect1">Select an option</label>
           <select class="form-control" id="exampleFormControlSelect1">
@@ -78,9 +78,9 @@ We can also add a button to our form - Buttons can handle an event when we click
               <option>5</option>
           </select>
       </div>
-
+```
 # Multiple selection
-
+```html
  <div class="form-group">
         <label for="exampleFormControlSelect1">Select an option</label>
         <select multiple class="form-control" id="exampleFormControlSelect1">
@@ -91,7 +91,7 @@ We can also add a button to our form - Buttons can handle an event when we click
             <option>5</option>
         </select>
     </div>
-
+```
 # Radio buttons
 ```html
   <div class="form-check-inline">
