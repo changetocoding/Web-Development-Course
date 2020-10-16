@@ -52,6 +52,9 @@ We can also add a button to our form - Buttons can handle an event when we click
   </body>
 ```
 # Checkboxes
+
+Checkboxes allow us to let user choose from a set of options for example: a set of colours, red, blue, green etc.
+
 ```html
  <div class="form-check">
           <input type="checkbox" class="form-check-input" id="checkbox1">
@@ -65,8 +68,10 @@ We can also add a button to our form - Buttons can handle an event when we click
       </div>
 ```
 # Dropdown selection
-
+We can use the select tag to create a dropdown list of options.
 # Single Selection 
+Creates a dropdown list that allows a user to select a single option
+
 ```html
 <div class="form-group">
           <label for="exampleFormControlSelect1">Select an option</label>
@@ -80,6 +85,7 @@ We can also add a button to our form - Buttons can handle an event when we click
       </div>
 ```
 # Multiple selection
+Creates a dropdown list that allows a user to select multiple options
 ```html
  <div class="form-group">
         <label for="exampleFormControlSelect1">Select an option</label>
@@ -93,6 +99,7 @@ We can also add a button to our form - Buttons can handle an event when we click
     </div>
 ```
 # Radio buttons
+Like a checkbox we can use a radio button to give users options to select from, unlike a checkbox the user can only select one option.
 ```html
   <div class="form-check-inline">
           <input class="form-check-input" type="radio" value="option1" id=defaultCheck1>
