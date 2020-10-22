@@ -4,17 +4,23 @@ Last week's homework review - Creating a form page with input fields, radio butt
 
 # History of Javascript
 
-Invented in 1995 by Brendan Eich, while he was working for Netscape Communications
+Invented in 1995 by Brendan Eich, while he was working for Netscape Communications,
 
 Was first known as Mocha before it was renamed to Livescript for the release of Netscape Navigator 2
 
-ECMAScript was created as a standard for Javascript
+Was designed to add interactivity to webpages 
 
-Is a scripting lanugage -
+Was renamed from Livescript to Javascript to capitalise on Javascript's popularity
 
+ECMAScript was created as a standard for Javascript when Netscape submitted JavaScript to ECMA International 
 
+Microsoft reverse engineered their own version of Javascript in 1996 after the release of Internet Explorer called JScript.
 
-AJAX -
+Throughout most of the early 2000s Javascript was stagnant until 2004 when Mozilla released Firefox and began wroking 
+
+AJAX - A term coined by Jesse James Garrett used to described a set of technologies where Javascript acted as the backbone to create web applications where data could be loaded in the background without needed to refresh the whole page.
+
+Chrome released in 2008 using the V8 Javascript engine - faster than competition at the time.
 
 Node.JS
 
@@ -78,6 +84,10 @@ let isOlderThan18 = true
 
 # Null
 
+Null refers to a variable that is empty
+
+let age = null
+
 # Undefined
 Undefined refers to a variable that hasn't been assigned a value
 
@@ -86,3 +96,5 @@ let name;
 alert(name) - Will print undefined 
 
 # Homework for this week
+
+Create a javascript application that displays the name, age of a person.
