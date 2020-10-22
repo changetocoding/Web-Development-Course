@@ -41,8 +41,9 @@ var name = "Johnny"
 There are two ways of declaring a variable in Javascript 
 
 var - The old way of declaring a variable in JS.
-
+```js
 var number = 5 
+```
 
 let - The modern way of declaring a variable in JS. Defines a variable with a restricted scope - not supported in older browsers 
 
