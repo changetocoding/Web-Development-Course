@@ -72,11 +72,11 @@ We can also set class fields using getter and setters
 
 A getter will return the class field it associated to
 
-GetName() - 
+get keyword is used to indicate a getter
 
 A setter will change the value of the class field that is associated with
 
-SetName(name) -
+set keyword is used to indicate a setter
 
 When we change the name in our class – the setter will be called
 
