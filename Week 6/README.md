@@ -10,8 +10,8 @@ We use JQuery for
 We can get an html element using JQuery's document.ready(), then specifying the html id of the element we want to select 
 
 ```html
-p id="text">Hello guys</p>
-<button id="btn1">Click me to change text</button>
+  <p id="text">Hello guys</p>
+  <button id="btn1">Click me to change text</button>
 
 ```
 
