@@ -17,12 +17,13 @@ To set up Git on your computer, install it from the official website https://git
 To run Git in a folder / file directory right click the folder and then press run Git Bash here
 
 # Git commands
+```
 git clone - Creates a copy of the repository in a new directory
 git add - adds new or changes files to the working directory, we can choose what files we want to add to our repository before making any commits, We must git add to our directory before doing a commit using git commit
 git commit - Commits changes made to the repository
 git pull - Grabs the latest changes made to a repository
 git push - Pushs the changes made to the repository
-
+```
 # Creating a GitHub Account
 To create a Github Account go to the website at https://github.com/
 
