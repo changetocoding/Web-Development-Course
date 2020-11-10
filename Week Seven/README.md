@@ -34,17 +34,19 @@ To create a repository in github, go to the home page of your github account. On
 
 # Creating a local git repository 
 To create a local repository in git, First we need to create a folder in the directory where we want our repository to be, we can do this by doing the following
-
+```git
 cd ~/Desktop
 mkdir myproject
 cd myproject 
+```
 
 cd - will move to the directory 
 mkdir - will create a directory in the target directory
 
 Then run the git init command to create a git repository in the root of the folder
-
+```git
 myproject$ git init
+```
 
 # Adding a file to a local git repository 
 
