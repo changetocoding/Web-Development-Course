@@ -71,6 +71,22 @@ git add file
 Once we added our file we can commit it using git commit
 
 # Uploading to a Repository using Git
+To upload to a repository using Git we need to do the following 
 
+First add our github repository along with a remote name to Git so we can push any changes made to Github, We can do this using
+
+git remote add origin repository link here
+
+or git remote add repository link here
+
+Example: 
+
+git remote add origin git remote add origin https://github.com/emarkexe2001/Uploading-to-GitHub-using-Git.git
+
+Once we have done that to push our commit to GitHub we need to use git push - But first always do a pull to make sure that make sure their are no changes in the branch before you push your commit
+
+git push -u origin main
 
 # Uploading to a Repository using Visual Code Studio
+
+To upload to a Repository in Visual Studio Code, Navigate to Source Control (The third option on the Sidebar). Stage any changes made if you made a change to a file, add a commit message to the change you made. Copy the repo link and use git remote add on the terminal to add it to VS Code. Press the tick button to commit your change. Press the ... button and push using the push button.
