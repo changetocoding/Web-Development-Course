@@ -1,5 +1,9 @@
  # Week 7 - Bootstrap Revision
  
+ # BootStrap Recap
+ 
+ Bootstrap is a CSS framework used to create responsive and mobile-first websites
+ 
  # Bootstrap containers
  A bootstrap container is a layout element that allows us to create a layout for our html pages
  
@@ -54,7 +58,27 @@ We can use BootStrap's grid layout for cards
     </div>
  ```  
  # Collapse
+ We can collapse elements using BootStrap's collapse component
  
+  ```html
+ <p>
+      <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+         Link with href
+      </a>
+      <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Button with data-target
+      </button>
+    </p>
+
+    <div class="collapse" id="collapseExample">
+      <div class="card">
+        <div class="card-body">
+          This is a card body
+        </div>
+      </div>
+    </div>
+  ```
+  
  # Navbar
  
  
