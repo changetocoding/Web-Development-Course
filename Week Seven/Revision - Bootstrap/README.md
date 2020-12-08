@@ -21,8 +21,34 @@
  ```
 
  # Bootstrap grid layout
- 
- 
+ Bootstrap allows us to use a grid layout on our containers to create a set of rows and columns to divide our content layout into.
+  ```html
+<div class="container">
+      <div class="row">
+        <div class="col-sm">
+            Column 1
+        </div>
+
+        <div class="col-6">
+          Column 2
+        </div>
+
+        <div class="col-sm">
+          Column 3
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          Column 1
+        </div>
+
+        <div class="col-5">
+          Column 2
+        </div>
+      </div>
+    </div>
+  ```
  # Cards
  A card is a content container that has options for headers and footers, images, text and links
  
@@ -80,5 +106,49 @@ We can use BootStrap's grid layout for cards
   ```
   
  # Navbar
- 
- 
+ We can create a navigation bar to move between pages using bootstrap
+   ```html
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  ```
+  # List Group
+  We can create a group of list items in BootStrap using Bootstrap's list group.
+  
+  ```html
+  <ul class="list-group">
+      <li class="list-group-item">Cras justo odio</li>
+      <li class="list-group-item">Dapibus ac facilisis in</li>
+      <li class="list-group-item">Morbi leo risus</li>
+      <li class="list-group-item">Porta ac consectetur ac</li>
+      <li class="list-group-item">Choco chip</li>
+    </ul>
+  ```
+  
+  # Lesson Links
+  
+  Bootstrap Grid Layout -
+  Cards -
+  Collapse -
+  Navbar -
+  List group - https://getbootstrap.com/docs/4.0/components/list-group/
+  
