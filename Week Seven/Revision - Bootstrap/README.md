@@ -146,9 +146,10 @@ We can use BootStrap's grid layout for cards
   
   # Lesson Links
   
-  Bootstrap Grid Layout -
-  Cards -
-  Collapse -
-  Navbar -
+  Bootstrap Grid Layout - https://getbootstrap.com/docs/4.0/layout/grid/
+  Cards - https://getbootstrap.com/docs/4.0/components/card/
+  Collapse - https://getbootstrap.com/docs/4.0/components/collapse/
+  Navbar - https://getbootstrap.com/docs/4.0/components/navbar/
+  Buttons - https://getbootstrap.com/docs/4.0/components/buttons/
   List group - https://getbootstrap.com/docs/4.0/components/list-group/
   
