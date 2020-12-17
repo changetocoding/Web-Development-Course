@@ -10,12 +10,14 @@ To debug in chrome we need to inspect the webpage which can do by right clicking
 Go to Sources tab. For this example we will be debugging through index.js.
 ![chrome-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20Chrome%203.png?raw=true)
 
+We can put a break point next to the line that we want to debug through
 ![chrome-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20Chrome%204.png?raw=true)
 
+When we run the code again, and press our button, the debugger will stop at that line allowing us to step into or through it to debug it. This become handy when we need to check for bugs and issues with our code.
 ![chrome-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20Chrome%205.png?raw=true)
 
+As you can see the breakpoint has been hit.
 ![chrome-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20Chrome%206.png?raw=true)
-
 
 
 # Live Server
@@ -59,6 +61,7 @@ As you can see Live server has reloaded the page for us to reflect the change ma
 To debug our website in VS Code we need to set up another extension which will allow us to debug using Chrome from Visual Code Studio. To do this we need to go to the extension page 
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20VS%20Code%20(Setting%20up%20Chrome%20Debugger).png?raw=true)
 
+
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20VS%20Code%20(Setting%20up%20Debug%20Setttings).png?raw=true)
 
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20VS%20Code%20Step%203.png?raw=true)
@@ -73,9 +76,8 @@ To debug our website in VS Code we need to set up another extension which will a
 
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debug%20with%20VS%20Code%20Step%209.png?raw=true)
 
-
 # Tutorials
+https://medium.com/young-coder/setting-up-javascript-debugging-in-visual-studio-code-6c5005529987
 
 # Homework
-
 Practice debugging using VS Code and Chrome's debugger, Run your project using Live Server and debug through it using Chrome's debugger. 
