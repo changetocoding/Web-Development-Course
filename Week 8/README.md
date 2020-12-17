@@ -5,6 +5,19 @@ Debugging is the process of finding and resolving bugs within programs. Programs
 
 # Debugging in Chrome
 
+![chrome-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20Chrome%201.png?raw=true)
+
+![chrome-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20Chrome%202.png?raw=true)
+
+![chrome-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20Chrome%204.png?raw=true)
+
+![chrome-debugging]()
+
+![chrome-debugging]()
+
+![chrome-debugging]()
+
+![chrome-debugging]()
 
 # Live Server
 Live Server is a VS Code extension that allows us to run a local development server with live reload for our html pages - so whenever we make a change to our page and save it, the change will be reflected on the live server version of the page (Saves us the hassle of having to reload our page each and everytime we make a change to it).
@@ -44,3 +57,26 @@ and reload the page
 As you can see Live server has reloaded the page for us to reflect the change made to our html
 
 # Debugging in VS Code
+To debug our website in VS Code we need to set up another extension which will allow us to debug using Chrome from Visual Code Studio. To do this we need to go to the extension page 
+![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20VS%20Code%20(Setting%20up%20Chrome%20Debugger).png?raw=true)
+
+![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20VS%20Code%20(Setting%20up%20Debug%20Setttings).png?raw=true)
+
+![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20VS%20Code%20Step%203.png?raw=true)
+
+![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debug%20with%20VS%20Code%20Step%204.png?raw=true)
+
+![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debug%20with%20VS%20Code%20Step%205.png?raw=true)
+
+![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debug%20with%20VS%20Code%20Step%207.png?raw=true)
+
+![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debug%20with%20VS%20Code%20Step%208.png?raw=true)
+
+![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debug%20with%20VS%20Code%20Step%209.png?raw=true)
+
+
+# Tutorials
+
+# Homework
+
+Practice debugging using VS Code and Chrome's debugger, Run your project using Live Server and debug through it using Chrome's debugger. 
