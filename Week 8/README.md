@@ -4,20 +4,19 @@
 Debugging is the process of finding and resolving bugs within programs. Programs that aid us with debugging are known as debuggers
 
 # Debugging in Chrome
-
+To debug in chrome we need to inspect the webpage which can do by right clicking and pressing Inspect
 ![chrome-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20Chrome%201.png?raw=true)
 
-![chrome-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20Chrome%202.png?raw=true)
+Go to Sources tab. For this example we will be debugging through index.js.
+![chrome-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20Chrome%203.png?raw=true)
 
 ![chrome-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20Chrome%204.png?raw=true)
 
-![chrome-debugging]()
+![chrome-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20Chrome%205.png?raw=true)
 
-![chrome-debugging]()
+![chrome-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20Chrome%206.png?raw=true)
 
-![chrome-debugging]()
 
-![chrome-debugging]()
 
 # Live Server
 Live Server is a VS Code extension that allows us to run a local development server with live reload for our html pages - so whenever we make a change to our page and save it, the change will be reflected on the live server version of the page (Saves us the hassle of having to reload our page each and everytime we make a change to it).
