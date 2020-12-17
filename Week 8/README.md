@@ -61,19 +61,29 @@ As you can see Live server has reloaded the page for us to reflect the change ma
 To debug our website in VS Code we need to set up another extension which will allow us to debug using Chrome from Visual Code Studio. To do this we need to go to the extension page 
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20VS%20Code%20(Setting%20up%20Chrome%20Debugger).png?raw=true)
 
-
+After restarting visual studio code go to run and start debugging (F5)
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20VS%20Code%20(Setting%20up%20Debug%20Setttings).png?raw=true)
 
+VS Code will ask us what Enviroment we want to run the code in select Chrome and this will create a launch json
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20VS%20Code%20Step%203.png?raw=true)
 
+
+in our launch json we need to take out the web url and replace the web root with "file"
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debug%20with%20VS%20Code%20Step%204.png?raw=true)
 
+
+Press the run button and we should see a folder styled page
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debug%20with%20VS%20Code%20Step%205.png?raw=true)
 
+Click on the html we want to run
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debug%20with%20VS%20Code%20Step%207.png?raw=true)
 
+And now we're running our html page in VS Code
+
+To debug the page we can add a breakpoint to a line in Visual Studio Code by click on the left side of the line
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debug%20with%20VS%20Code%20Step%208.png?raw=true)
 
+When we run it again and hit that breakpoint, The code execution will stop until we move past that breakpoint.
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debug%20with%20VS%20Code%20Step%209.png?raw=true)
 
 # Tutorials
