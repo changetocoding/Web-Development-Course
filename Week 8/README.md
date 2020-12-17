@@ -64,15 +64,14 @@ To debug our website in VS Code we need to set up another extension which will a
 After restarting visual studio code go to run and start debugging (F5)
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20VS%20Code%20(Setting%20up%20Debug%20Setttings).png?raw=true)
 
-VS Code will ask us what Enviroment we want to run the code in select Chrome and this will create a launch json
+VS Code will ask us what Enviroment we want to run the code in select Chrome.
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debugging%20with%20VS%20Code%20Step%203.png?raw=true)
 
 
-in our launch json we need to take out the web url and replace the web root with "file"
+This will create a launch json like shown below
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debug%20with%20VS%20Code%20Step%204.png?raw=true)
 
-
-Press the run button and we should see a folder styled page
+in our launch json we need to take out the web url and replace the web root with "file"
 ![vs-debugging](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%208/Screenshots/Debug%20with%20VS%20Code%20Step%205.png?raw=true)
 
 Click on the html we want to run
