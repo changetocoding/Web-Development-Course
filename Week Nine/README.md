@@ -6,9 +6,9 @@ A function declaration is a syntax for creating a function by creating a block o
 ```JS
 addNumbers(1, 3);
 
-function addNumbers(firstNumber, secondNumbers)
+function addNumbers(firstNumber, secondNumber)
 {
-    return a + b;
+    return firstNumber + secondNumber;
 }
 ```
 
@@ -22,7 +22,7 @@ Unlike function declaration when create a function using function expression we 
 
 ```JS
 let addNumber = function(firstNumber, secondNumber) {
-    return a + b;
+    return firstNumber + secondNumber;
 };
 ```
 
@@ -31,7 +31,7 @@ The same as the function declaration version.
 ```JS
 function addNumbers(firstNumber, secondNumber)
 {
-    return a + b;
+    return firstNumber + secondNumber;
 }
 ```
 
