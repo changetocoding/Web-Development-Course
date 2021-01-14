@@ -46,9 +46,26 @@ A callback function is a function or one or more functions that we pass into ano
 We can create a callback function using both Function Declaration and Function Expression.
 
 Function Declaration example here:
+```JS
+function displayName(name)
+{
+    alert(name);
+}
+
+function createFullName(firstName, lastName, nameDisplayer)
+{
+    let fullName = firstName + " " + lastName;
+
+    nameDisplayer(fullName);
+}
+
+createFullName("Jo", "Ray", displayName);
+```
 
 Function Expression example here:
-
+```JS
+createFullName(firstName, lastName, function() {return firstName + " " + lastName});
+```
 # Arrow functions
 An arrow function is another function syntax for creating functions.
 
