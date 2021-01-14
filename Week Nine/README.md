@@ -3,8 +3,12 @@
 # What is a function declaraiton?
 A function declaration is a syntax for creating a function by creating a block of code.
 
-Example here
-
+```JS
+function myFunction()
+{
+    document.getElementById("jsElement").innerHTML = "This paragraph is written in JavaScript";
+}
+```
 We can also create a function using another type of syntax for creating a function known as Function Expression.
 
 # What is a function expression?
