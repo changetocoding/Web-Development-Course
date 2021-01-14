@@ -4,11 +4,14 @@
 A function declaration is a syntax for creating a function by creating a block of code.
 
 ```JS
-function myFunction()
+addNumbers(1, 3);
+
+function addNumbers(firstNumber, secondNumbers)
 {
-    document.getElementById("jsElement").innerHTML = "This paragraph is written in JavaScript";
+    return a + b;
 }
 ```
+
 We can also create a function using another type of syntax for creating a function known as Function Expression.
 
 # What is a function expression?
@@ -17,7 +20,20 @@ Another syntax for creating a function. We create a function in Function express
 
 Unlike function declaration when create a function using function expression we need a semicolon as setting the variable value as a function is treated as an assignment.
 
-Example here
+```JS
+let addNumber = function(firstNumber, secondNumber) {
+    return a + b;
+};
+```
+
+The same as the function declaration version.
+
+```JS
+function addNumbers(firstNumber, secondNumber)
+{
+    return a + b;
+}
+```
 
 # Difference between Function Expression and Function Declaration
 
@@ -36,9 +52,14 @@ Function Expression example here:
 # Arrow functions
 An arrow function is another function syntax for creating functions.
 
-Example:
+```JS
+let addNumber = (firstNumber, secondNumber) => firstNumber + secondNumber;
+```
 
 Second Example:
+```JS
+let sayHi = () => alert("Heya");
+```
 
 Is the same as a function expression but more of a shorthand version of it
 
@@ -49,5 +70,18 @@ Function Expression version
 We can also assign arrow functions using curly braces these are known as Multiline arrow functions
 
 Example:
+
+```JS
+let addNumbers = (firstNumber, secondNumber) => {
+    let result =  firstNumber + secondNumber;
+    return result;
+}
+```
+
+# Resources
+
+https://javascript.info/function-expressions - For function expressions
+
+https://javascript.info/arrow-functions-basics - For arrow functions
 
 
