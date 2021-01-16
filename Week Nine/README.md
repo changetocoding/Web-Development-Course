@@ -46,7 +46,8 @@ let addNumbers = function(firstNumber, secondNumber) {
 
 # Difference between Function Expression and Function Declaration
 
-[info-graphic](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%20Nine/Function%20Declaration%20and%20Function%20Expression.png?raw=true)
+[info-graphic](https://github.com/emarkexe2001/Web-Development-Course/blob/main/Week%20Nine/)
+![Function Declaration and Function Expression.](Function%20Declaration%20and%20Function%20Expression.png)
 
 # Callback functions
 
