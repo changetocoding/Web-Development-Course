@@ -1,4 +1,4 @@
-# Week 9 - Function Expressions and Arrow Functions
+# Week 13 - Function Expressions and Arrow Functions
 
 # What is a function declaraiton?
 A function declaration is a syntax for creating a function by creating a block of code.
@@ -115,4 +115,38 @@ https://stackoverflow.com/questions/336859/var-functionname-function-vs-function
 
 # Homework
 
-Create three functions, One with function declaration, function expression and arrow functions. Make sure the functions are clearly named and easy to understand. Bad naming conventions eg. function1 will no longer be allowed.
+Create a filter, map and sum function, Each one must contain a function declaration version, function expression and arrow function version
+
+Starting code to help you out. Also make sure that your function names are clear and concise, Naming conventions will be checked next week.
+- filter
+```js
+// Your code
+var youngsters = filterIt(peopleArrary, function (item) {
+	return item.age < 30;
+});
+
+// Must match
+var expected = peopleArray.filter(function (item) {
+	return item.age < 30;
+});
+```
+- map
+```js
+// Your code
+var names = mapIt(peopleArray, (item) => return item.name);
+
+// Must match
+const expected = peopleArray.map((item) => return item.name; );
+```
+
+- some
+```js
+// Your code
+var names = hasSome(peopleArray, (item) => return item.age < 30);
+
+// Must match
+
+var anyUnder30 = peopleArray.some(function (item) {
+	return  item.age < 30;
+});
+```
