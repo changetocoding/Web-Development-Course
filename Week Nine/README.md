@@ -1,6 +1,6 @@
 # Week 13 - Function Expressions and Arrow Functions
 
-# What is a function declaraiton?
+# What is a function declaration?
 A function declaration is a syntax for creating a function by creating a block of code.
 
 ```JS
