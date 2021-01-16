@@ -110,6 +110,8 @@ https://javascript.info/function-expressions - For function expressions
 
 https://javascript.info/arrow-functions-basics - For arrow functions
 
+https://stackoverflow.com/questions/336859/var-functionname-function-vs-function-functionname
+
 # Homework
 
 Create three functions, One with function declaration, function expression and arrow functions. Make sure the functions are clearly named and easy to understand. Bad naming conventions eg. function1 will no longer be allowed.
