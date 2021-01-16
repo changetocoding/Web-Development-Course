@@ -21,7 +21,7 @@ Another syntax for creating a function. We create a function in Function express
 Unlike function declaration when create a function using function expression we need a semicolon as setting the variable value as a function is treated as an assignment.
 
 ```JS
-let addNumber = function(firstNumber, secondNumber) {
+let addNumbers = function(firstNumber, secondNumber) {
     return firstNumber + secondNumber;
 };
 ```
@@ -33,6 +33,15 @@ function addNumbers(firstNumber, secondNumber)
 {
     return firstNumber + secondNumber;
 }
+```
+We can only use the function expression version of AddNumbers after it is defined. As it is defined when the line it is created on is reached.
+
+```JS
+addNumbers(1, 3);
+
+let addNumbers = function(firstNumber, secondNumber) {
+    return firstNumber + secondNumber;
+};
 ```
 
 # Difference between Function Expression and Function Declaration
