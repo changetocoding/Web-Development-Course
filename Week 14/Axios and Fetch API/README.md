@@ -129,6 +129,7 @@ https://jsonplaceholder.typicode.com/ - Placeholder server for testing GET and P
 https://stackoverflow.com/questions/50330795/fetch-api-error-handling - Error validation in Fetch API
 https://javascript.info/fetch - Fetch API - POST and GET
 https://httpstatusdogs.com/ - HTTP Requests
+https://jsonplaceholder.typicode.com/guide/ - Fetch API post and GET 
 
 
 
