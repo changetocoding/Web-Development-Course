@@ -131,5 +131,10 @@ https://javascript.info/fetch - Fetch API - POST and GET
 https://httpstatusdogs.com/ - HTTP Requests
 https://jsonplaceholder.typicode.com/guide/ - Fetch API post and GET 
 
+# Homework
 
+https://classroom.udacity.com/courses/ud109/lessons/
+ (chapter 3)
+Carry on with project. In 2 weeks will come back to this and make server requests
+Present difference between Post and get
 
