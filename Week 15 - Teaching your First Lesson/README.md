@@ -36,3 +36,7 @@ console.log("Heya");
 # Useful Resources to work with when planning a lesson
 
 https://javascript.info/ - The modern Javascript tutorial
+
+https://developer.mozilla.org/en-US/docs/Web/javascript - Mozila Javascript Tutorial
+
+https://www.w3schools.com/
