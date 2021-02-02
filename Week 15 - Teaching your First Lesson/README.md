@@ -15,7 +15,7 @@ To create a readme for your git repo, I do the following steps: Add File -> Crea
 The layout format I follow for a lesson plan readme is 
  
 - Homework review
-- Introducion to Lesson Topic - What is the topic
+- Introduction to Lesson Topic - What is the topic
 - Further details for Lesson Topic - Topic Part A, Topic Part B etc
 - Tutorials
 - Resources
@@ -25,7 +25,11 @@ The layout format I follow for a lesson plan readme is
 
 To add code to a Github README we use the follow
 
-'
+``` ``` - Place the code inside of the speech
+
+```js
+console.log("Heya");
+```
 
 # Creating and finding tutorials
 
