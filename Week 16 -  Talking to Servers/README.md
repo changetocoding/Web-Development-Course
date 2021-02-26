@@ -10,7 +10,7 @@ GET - for retrieving data
 
 # What is the form tag?
 
-The form tag is 
+The form tag is similar to div, is a way of organising the data that we are going to send over to the server
 
 # Creating a form to submit using HTMl
 
@@ -37,14 +37,16 @@ The form tag is
     </body>
 </html>
 ```
+When we are sending over data using the html form. The name of the input on the form is used to map the field to the value. Not the id.
 
-# What is the FormData class?
 
 # Creating a form to submit using Javascript Form Data class
 
+Another way of sending over form data is using axios and the javascript formData class
+
 ```html
 <html>
-    <title>Sending data using HTML Form</title>
+    <title>Sending data using FormData</title>
 
     <body>
         <form id="theForm">
@@ -79,11 +81,15 @@ document.getElementById("theForm").addEventListener("submit", function(e) {
 })
 ```
 
+The form data class will create an object containing the form fields.
+
 # Creating a form to submit using a payload
+
+The last way is using a payload to send over the data
 
 ```html
 <html>
-  <title>Sending data using HTML Form</title>
+  <title>Sending data using Payload</title>
 
   <body>
     <form id>
@@ -117,6 +123,8 @@ document.getElementById("btnSubmitForm").onclick = function(e) {
 }
 ```
 
+When using a payload we need to grab all the fields by id that we want to send over then add the fields indiviually to the payload before posting it.
+
 # Homework
 
 Update the Bonzai website to talk to the server.
@@ -127,3 +135,9 @@ Work with the Order api route and use it to talk to the server and send over dat
 
 # Extra resources 
 Html form tag - https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data
+
+Using FormData - https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects
+
+Youtube video on creating forms - https://www.youtube.com/watch?v=c3qWHnJJbSY
+
+
