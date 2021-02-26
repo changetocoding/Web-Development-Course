@@ -19,10 +19,10 @@ The form tag is similar to div, is a way of organising the data that we are goin
     <title>Sending data using HTML Form</title>
 
     <body>
-        <form action="https://tbhpwebdevapi.azurewebsites.net/api/Message/save" method="POST">
+        <form action="https://tbhpwebdevapi.azurewebsites.net/api/Message/save/usingFormData" method="POST">
             <div>
                 <label for="to">Who do you want to say this to?</label>
-                <input name="to" id="to" value="A">
+                <input name="to" id="to" value="Joe">
             </div>
 
             <div>
@@ -89,18 +89,18 @@ The last way is using a payload to send over the data
 
 ```html
 <html>
-  <title>Sending data using Payload</title>
+    <title>Sending data using Payload</title>
 
   <body>
-    <form id>
+    <form>
         <div>
             <label for="to">Who do you want to say this to?</label>
-            <input name="to" id="to" value="A">
+            <input id="to" value="A">
         </div>
 
         <div>
             <label for="say">What do you want to say?</label>
-            <input name="say" id="say" value="Mark">
+            <input id="say" value="Mark">
         </div>
     </form>
 
@@ -110,30 +110,38 @@ The last way is using a payload to send over the data
   <script src="payloadform.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </html>
+
 ```
 
 ```js
 document.getElementById("btnSubmitForm").onclick = function(e) {
     e.preventDefault();
-    const toTxt = document.getElementById("to");
-    const sayTxt = document.getElementById("say");
+    const toTxt = document.getElementById("to").value;
+    const sayTxt = document.getElementById("say").value;
+    console.log(toTxt + " " + sayTxt);
     const payload = {to:toTxt, say:sayTxt};
-    axios.post('https://tbhpwebdevapi.azurewebsites.net/api/Message/save', payload);
+    axios.post('https://tbhpwebdevapi.azurewebsites.net/api/Message/save/usingJson', payload);
 
 }
 ```
 
 When using a payload we need to grab all the fields by id that we want to send over then add the fields indiviually to the payload before posting it.
 
-# Checking what data we sent over
+# viewing Http Requests and seeing what data was sent
 
 We can check the data that was sent over by going right clicking Inspect Element, going to the network tab, look for the request to the controller route - usually the controller, click on it, go to Headers and at the both it will tell you what data was sent.
+
+Note: Covered in the using For
 
 # Homework
 
 Update the Bonzai website to talk to the server.
 
 API server to work with -  https://tbhpwebdevapi.azurewebsites.net/swagger/index.html
+
+Order save with FormData - https://tbhpwebdevapi.azurewebsites.net/api/Order/simple/save/usingFormData
+
+Order save with Json - https://tbhpwebdevapi.azurewebsites.net/api/Order/simple/save/usingJson
 
 Work with the Order api route and use it to talk to the server and send over data to the server.
 
