@@ -75,7 +75,7 @@ Another way of sending over form data is using axios and the javascript formData
 document.getElementById("theForm").addEventListener("submit", function(e) {
     let form = document.getElementById('theForm');
     let formData = new FormData(form);
-    axios.post('https://tbhpwebdevapi.azurewebsites.net/api/Message/save', formData);
+    axios.post('https://tbhpwebdevapi.azurewebsites.net/api/Message/save/usingFormData', formData);
 
     e.preventDefault();
 })
@@ -124,6 +124,10 @@ document.getElementById("btnSubmitForm").onclick = function(e) {
 ```
 
 When using a payload we need to grab all the fields by id that we want to send over then add the fields indiviually to the payload before posting it.
+
+# Checking what data we sent over
+
+We can check the data that was sent over by going right clicking Inspect Element, going to the network tab, look for the request to the controller route - usually the controller, click on it, go to Headers and at the both it will tell you what data was sent.
 
 # Homework
 
