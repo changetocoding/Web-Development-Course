@@ -42,15 +42,12 @@ axios.get('/api/PhoneBook/getAll')   // Your promise object
 
 # Promise states
 
-Fulfilled / Resolved - The action related to promise succeeded
+Resolve - The action related to promise succeeded
 
-Rejected - Promise action failed
+Reject - Promise action failed
 
-Pending - The promise action hasn't yet been fulfilled or rejected
 
-Settled - Either the promise action has been fulfilled or rejected
-
-Homework 
+# Homework 
 
 Go through the Udacity course on Promises 
 
@@ -64,3 +61,70 @@ How to set up exoplanet explorer
 4. Create a json file called npm-shrinkwrap.json and add the following line
 
 https://timonweb.com/javascript/how-to-fix-referenceerror-primordials-is-not-defined-error/
+
+```js
+let trees;
+fetch('
+http://example.com/movies.json
+') //  first  0sec
+.then(response => response.json())  //second  5sec
+.then(data => trees = data)
+.catch(err => console.log(err));  // third   5sec
+
+Element.val(trees);
+
+
+fetch('
+http://example.com/movies.json
+') 
+.then(response => 
+response.data
+...) 
+
+
+response = {
+  json:function(){
+    new Promise()
+  }
+}
+
+response = {
+  data:data
+}
+
+fetch('
+http://example.com/movies.json
+')
+.then(response => fetch(response.json()))
+
+
+console.log("test") // 1sec
+
+
+axios
+  .get('
+https://maps.googleapis.com/maps/api/geocode/json?&address=
+' + this.props.p1)
+  .then(response => {
+    this.setState({ p1Location: 
+response.data
+ });
+    return axios.get('
+https://maps.googleapis.com/maps/api/geocode/json?&address=
+' + this.props.p2);
+  })
+  .then(response => {
+    this.setState({ p2Location: 
+response.data
+ });
+    return axios.get('
+https://maps.googleapis.com/maps/api/geocode/json?&address=
+' + this.props.p3);
+  })
+  .then(response => {
+    this.setState({ p3Location: 
+response.data
+ });
+  }).catch(error => console.log(error.response));
+  
+  ```
