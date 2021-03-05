@@ -22,8 +22,25 @@ We should use Promises when working with ajax requests or any async task that re
 
 A promise conists of three parts, the task usually connecting to an api route through a url, then - what happens once we recieve a response from the server, catch - what happens if the promise or response fails.
 
+Writing your own Promise code
+```js
+new Promise(function(resolve, reject) {
+
+});
+```
+
+Other examples of promise coede
+```js
+fetch('
+http://example.com/movies.json
+') 
+.then(response => 
+response.data
+...) 
+```
+
 # .Then
-.then is used after we receive a response and want to do something with that response, for example if we want to display a list of data after doing a GET Request
+We know that we are returning a promise when we have to do a .then, which allows us to perform an action with the result when the promise is resolved.
 
 ```js
 axios.get('/api/PhoneBook/getAll')   // Your promise object
@@ -32,7 +49,7 @@ axios.get('/api/PhoneBook/getAll')   // Your promise object
 ```
 
 # .Catch
-.catch is used for error handling promises and will catch any errors if a promise is rejected (the promise action fails). for example if the then in this case failed. The promise object would go to the .catch block and handle the error there
+.catch is used for recieving errors when a promise is rejected, allowing us to do something after the error happens e.g log the error or retry the request.
 
 ```js
 axios.get('/api/PhoneBook/getAll')   // Your promise object
@@ -42,10 +59,42 @@ axios.get('/api/PhoneBook/getAll')   // Your promise object
 
 # Promise states
 
-Resolve - The action related to promise succeeded
+Resolve - the promise was resolved successfully
 
-Reject - Promise action failed
+Reject - the promise was rejected
 
+# Chaining promises
+
+We can chain promises together, to have multiple results happen after a promise handler has been resolved.
+
+```js
+axios
+  .get('
+https://maps.googleapis.com/maps/api/geocode/json?&address=
+' + this.props.p1)
+  .then(response => {
+    this.setState({ p1Location: 
+response.data
+ });
+    return axios.get('
+https://maps.googleapis.com/maps/api/geocode/json?&address=
+' + this.props.p2);
+  })
+  .then(response => {
+    this.setState({ p2Location: 
+response.data
+ });
+    return axios.get('
+https://maps.googleapis.com/maps/api/geocode/json?&address=
+' + this.props.p3);
+  })
+  .then(response => {
+    this.setState({ p3Location: 
+response.data
+ });
+  }).catch(error => console.log(error.response));
+  
+  ```
 
 # Homework 
 
