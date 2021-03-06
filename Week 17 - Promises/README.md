@@ -2,7 +2,7 @@
 # What is async?
 
 Asynchronous task is a task that can be executed on thethread while another process is running. (So you don't have to wait for something else to finish before executing the task),
-Think of making washing the dishes or grabbing a cup while boiling a hot water in a kettle.
+Think of washing the dishes or grabbing a cup while boiling a hot water in a kettle we don't need to wait for the kettle to be done boiling before we do the other tasks.
 
 
 # What is a promise
