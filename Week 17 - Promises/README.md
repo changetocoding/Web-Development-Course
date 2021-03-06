@@ -27,8 +27,7 @@ Writing your own Promise code
 
 Other examples of promise code - Fetch API
 ```js
-fetch('
-http://example.com/movies.json') 
+fetch('http://example.com/movies.json') 
 .then(response => response.data) 
 ```
 
