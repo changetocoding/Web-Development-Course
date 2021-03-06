@@ -95,23 +95,10 @@ response.data
   }).catch(error => console.log(error.response));
   
   ```
-
-# Homework 
-
-Go through the Udacity course on Promises 
-
-https://classroom.udacity.com/courses/ud898
-
-How to set up exoplanet explorer
-
-1. Open up git Bash and clone the repo using git clone https://github.com/udacity/exoplanet-explorer
-2. Go to the folder using cd exoplanet-explorer and install gulp using npm install -g gulp bower
-3. Install the polymer starter kit npm install && bower install -f polymer-starter-kit
-4. Create a json file called npm-shrinkwrap.json and add the following line
-
-https://timonweb.com/javascript/how-to-fix-referenceerror-primordials-is-not-defined-error/
-
-```js
+  
+ # Which order will this be executed in
+ 
+ ```js
 let trees;
 fetch('
 http://example.com/movies.json
@@ -121,59 +108,26 @@ http://example.com/movies.json
 .catch(err => console.log(err));  // third   5sec
 
 Element.val(trees);
+ ```
 
+# Homework 
 
-fetch('
-http://example.com/movies.json
-') 
-.then(response => 
-response.data
-...) 
+Go through the Udacity course on Promises 
 
+https://classroom.udacity.com/courses/ud898
 
-response = {
-  json:function(){
-    new Promise()
-  }
-}
+How to set up exoplanet explorer 
 
-response = {
-  data:data
-}
+1. Open up git Bash and clone the repo using git clone https://github.com/udacity/exoplanet-explorer
+2. Go to the folder using cd exoplanet-explorer and install gulp using npm install -g gulp bower
+3. Install the polymer starter kit npm install && bower install -f polymer-starter-kit
+4. Create a json file called npm-shrinkwrap.json and add the following line
+Tutorial explaining npm-shrinkwrap.jspm : https://timonweb.com/javascript/how-to-fix-referenceerror-primordials-is-not-defined-error/
 
-fetch('
-http://example.com/movies.json
-')
-.then(response => fetch(response.json()))
+# Other resources
 
+https://javascript.info/promise-basics
 
-console.log("test") // 1sec
+https://javascript.info/callbacks
 
-
-axios
-  .get('
-https://maps.googleapis.com/maps/api/geocode/json?&address=
-' + this.props.p1)
-  .then(response => {
-    this.setState({ p1Location: 
-response.data
- });
-    return axios.get('
-https://maps.googleapis.com/maps/api/geocode/json?&address=
-' + this.props.p2);
-  })
-  .then(response => {
-    this.setState({ p2Location: 
-response.data
- });
-    return axios.get('
-https://maps.googleapis.com/maps/api/geocode/json?&address=
-' + this.props.p3);
-  })
-  .then(response => {
-    this.setState({ p3Location: 
-response.data
- });
-  }).catch(error => console.log(error.response));
-  
-  ```
+https://javascript.info/promise-chaining
