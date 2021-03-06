@@ -1,7 +1,7 @@
 
 # What is async?
 
-Asynchronous task is a task that can be executed on a seperate thread while another process is running. (So you don't have to wait for something else to finish before executing the task),
+Asynchronous task is a task that can be executed on thethread while another process is running. (So you don't have to wait for something else to finish before executing the task),
 Think of making washing the dishes or grabbing a cup while boiling a hot water in a kettle.
 
 
@@ -9,38 +9,31 @@ Think of making washing the dishes or grabbing a cup while boiling a hot water i
 
 Promises are a way of handling asynchronous code, specifically for what happens after an asynchronous task is completed.
 
-Promises can only be resolved once if there is more than one resolve in a promise only the first action in the promise will be resolved, the second resolve will do nothing.
+Promises can only be resolved once if there is more than one resolve in a promise only the first action in the promise will be resolved, the second action in the resolve will do nothing.
 
+We use Promises when working with ajax requests or any async task that requires an action after it has been complete.
+
+# Promise 
+
+A promise conists of three parts, the promise object usually connecting to an api route through a url, .then - what happens after the promise has been resolved, catch - what happens if the promise is rejected.
+
+Writing your own Promise code
+```js
  new Promise(function(resolve, reject) {
  resolve('hi);
  resolve('bye);
 });
-
-We should use Promises when working with ajax requests or any async task that requires an action after it has been complete.
-
-# Promise 
-
-A promise conists of three parts, the task usually connecting to an api route through a url, then - what happens once we recieve a response from the server, catch - what happens if the promise or response fails.
-
-Writing your own Promise code
-```js
-new Promise(function(resolve, reject) {
-
-});
 ```
 
-Other examples of promise coede
+Other examples of promise code - Fetch API
 ```js
 fetch('
-http://example.com/movies.json
-') 
-.then(response => 
-response.data
-...) 
+http://example.com/movies.json') 
+.then(response => response.data) 
 ```
 
 # .Then
-We know that we are returning a promise when we have to do a .then, which allows us to perform an action with the result when the promise is resolved.
+We know that we are returning a promise when we have to do a .then, which allows us to perform an action with the result when the promise is resolved. .then are asynchonous
 
 ```js
 axios.get('/api/PhoneBook/getAll')   // Your promise object
@@ -49,7 +42,7 @@ axios.get('/api/PhoneBook/getAll')   // Your promise object
 ```
 
 # .Catch
-.catch is used for recieving errors when a promise is rejected, allowing us to do something after the error happens e.g log the error or retry the request.
+.catch is used for recieving errors when a promise is rejected, allowing us to do something after the error happens e.g log the error or retry the request. 
 
 ```js
 axios.get('/api/PhoneBook/getAll')   // Your promise object
@@ -65,32 +58,19 @@ Reject - the promise was rejected
 
 # Chaining promises
 
-We can chain promises together, to have multiple results happen after a promise handler has been resolved.
+We can chain promises together, to have multiple results happen after a promise handler has been resolved. Chained promises are sequential so they happen one after another
 
 ```js
-axios
-  .get('
-https://maps.googleapis.com/maps/api/geocode/json?&address=
-' + this.props.p1)
+axios.get('https://maps.googleapis.com/maps/api/geocode/json?&address=' + this.props.p1)
   .then(response => {
-    this.setState({ p1Location: 
-response.data
- });
-    return axios.get('
-https://maps.googleapis.com/maps/api/geocode/json?&address=
-' + this.props.p2);
+  this.setState({ p1Location: response.data});
+    return axios.get('https://maps.googleapis.com/maps/api/geocode/json?&address=' + this.props.p2);
   })
-  .then(response => {
-    this.setState({ p2Location: 
-response.data
+  .then(response => {this.setState({ p2Location: response.data
  });
-    return axios.get('
-https://maps.googleapis.com/maps/api/geocode/json?&address=
-' + this.props.p3);
+    return axios.get('https://maps.googleapis.com/maps/api/geocode/json?&address=' + this.props.p3);
   })
-  .then(response => {
-    this.setState({ p3Location: 
-response.data
+  .then(response => {this.setState({ p3Location: response.data
  });
   }).catch(error => console.log(error.response));
   
@@ -101,11 +81,10 @@ response.data
  ```js
 let trees;
 fetch('
-http://example.com/movies.json
-') //  first  0sec
-.then(response => response.json())  //second  5sec
+http://example.com/movies.json') //  
+.then(response => response.json())  
 .then(data => trees = data)
-.catch(err => console.log(err));  // third   5sec
+.catch(err => console.log(err));
 
 Element.val(trees);
  ```
