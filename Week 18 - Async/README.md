@@ -23,13 +23,9 @@ return 5
 Await can be used inside of an async function to wait for a promise to resolve before performing an action once the promise has resolved. The key bit about the Await keyword is that it can only be used inside of an async function
 
 ```js
-async function returnNumber(num1, num2 )
+async function getDataFromAPI()
 { 
-   let promise = Promise.resolve(2);
-   
-   result = await promise;
-   
-   return result;
+  data = await fetch('http://example.com/movies.json') 
 }
 ```
 
