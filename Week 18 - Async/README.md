@@ -31,25 +31,22 @@ async function getDataFromAPI()
 
 This will not work because the await keyword can only be used inside an async function.
 ```js
-function returnNumber()
+function getDataFromAPI()
 {
- let promise = Promise.resolve(2);
- 
- result = await promise;
- 
- return result
+  data = await fetch('http://example.com/movies.json') 
 };
 ```
 
 # Homework
 
-Go through the following resources on the async method and await
+Go through the following resources on the async method and await, start with the visualised promises dev.to page first, watch the freecampcode video after and follow along with the tasks and read the javascript tutorial page on async last.
 
-Javascript tutorial - Async / Await - https://javascript.info/async-await
 
 Javascript Visualised Promises and async - https://dev.to/lydiahallie/javascript-visualized-promises-async-await-5gke
 
 Javascript Async and Promises https://www.freecodecamp.org/news/learn-promise-async-await-in-20-minutes/ 
+
+Javascript tutorial - Async / Await - https://javascript.info/async-await
 
 and complete the tasks on the javascript tutorial and the FreeCodeCamp site.
 
