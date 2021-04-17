@@ -1,6 +1,6 @@
 # this
 
-this keyword refers to the calling function, 
+this keyword refers to the object that it belongs to. This 
 
 Example code using this
 
@@ -11,7 +11,6 @@ convertToDataURI() {
       //const preview = document.querySelector('img');
       const file = document.querySelector('input[type=file]').files[0];
       const reader = new FileReader();
-      const self = this;
       reader.addEventListener(
         'load',
         function () {
@@ -104,8 +103,6 @@ convertToDataURI() {
     },
   },
 ```
-
-# Homework
 
 # Resources
 
